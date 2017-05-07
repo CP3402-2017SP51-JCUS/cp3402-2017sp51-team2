@@ -33,7 +33,7 @@
         }
 
         .header .header-body {
-            max-width: 1200px;
+            max-width: 100%;
             text-align: center;
             margin: 0 auto;
         }
