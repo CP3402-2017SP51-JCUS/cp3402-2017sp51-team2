@@ -96,7 +96,7 @@
                 <a href="#"> Home </a>
                 <a href="#"> Blog </a>
                 <a href="#"> Order </a>
-                <a href="#"> About Us </a>
+                <a href="wp-content/themes/watthub/contact-us.php"> About Us </a>
             </nav>
         </div>
     </header>
