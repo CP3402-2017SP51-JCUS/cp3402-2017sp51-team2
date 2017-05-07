@@ -54,7 +54,6 @@
         /* Logo message */
         .header .header-body h1 span {
             color: #5383d3;
-            font-size: 18px;
         }
 
         /* Menus */
@@ -91,7 +90,7 @@
 
     <header class="header">
         <div class="header-body">
-            <h1><a href="#">Watthub</a></h1>
+            <h1><a href="#">Watt<span>Hub</span></a></h1>
 
             <nav>
                 <a href="#"> Home </a>
