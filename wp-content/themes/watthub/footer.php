@@ -59,12 +59,14 @@
         }
 
         .footer .footer-body .footer-body-right a {
-            font: normal 32px Cookie, Arial, Helvetica, sans-serif;
+            font: normal 24px 'Josefin Sans', Arial, Helvetica, sans-serif;
             text-decoration: none;
             color: #ffffff;
             padding-right: 20px;
         }
     </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
 <?php wp_footer(); ?>
     <footer class="footer">
