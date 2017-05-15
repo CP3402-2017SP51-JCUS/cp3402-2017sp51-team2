@@ -9,7 +9,15 @@ body {
     text-align: center;
 }
 .basic-container {
-    background-color: #0aa893;
+    background-color: #b72d26;
+    overflow: hidden;
+}
+.text-bold {
+    font-weight: bold;
+}
+#map-container{
+    width: 100%;
+    height: 600px;
 }
 
 /* Carousel (row 1) CSS */
@@ -74,8 +82,8 @@ body {
     bottom: 0;
     right: 0;
     margin: 0;
-    border: 20px solid rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.90);
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    background-color rgba(255, 255, 255, 0.90);
     opacity: 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -103,7 +111,8 @@ body {
 }
 .desk, .desk h4, .team-hover .s-link a {
     text-align: center;
-    color: #222;
+    color: #7e7e7e;
+    font-style: italic;
 }
 
 .container-title {
@@ -126,7 +135,33 @@ body {
 }
 
 
-/* Contact (row 3) */
+/* Contact Text (row 3, column 1) */
+.text-container {
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20%;
+    display: block;
+}
+.contact-text {
+    color: #FFFFFF;
+}
+.contact-text > h1 {
+    font-size: 38px;
+    font-weight: bold;
+}
+.contact-text > p {
+    font-size: 18px;
+}
+@media only screen and (max-width: 768px) {
+    .text-container {
+        padding-left: 0%;
+        text-align: center;
+    }
+}
+
+/* Contact Form (row 3, column 2) */
 .contact-container {
     width: 100%;
     max-width: 400px;
@@ -203,7 +238,7 @@ body {
     cursor: pointer;
     width: 100%;
     border: none;
-    background: #4CAF50;
+    background: #d12921;
     color: #FFF;
     margin: 0 0 5px;
     padding: 10px;

@@ -7,12 +7,38 @@
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" inte`grity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Google Map -->
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script>
+    function init_map() {
+        var var_location = new google.maps.LatLng(1.2926943,103.8598991);
+
+        var var_mapoptions = {
+            center: var_location,
+            zoom: 16,
+            scrollwheel: false
+        };
+
+        var var_marker = new google.maps.Marker({
+            position: var_location,
+            map: var_map,
+            title:"Venice"
+        });
+
+        var var_map = new google.maps.Map(document.getElementById("map-container"), var_mapoptions);
+
+        var_marker.setMap(var_map);
+    }
+
+    google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
 </head>
 
 <body style="margin: 0px">
     <div class="carousel text-center">
         <div class="carousel-body text-center">
-            <h1>WattHub</h1>
+            <h1>Learn more about us</h1>
         </div>
     </div>
 
@@ -22,27 +48,8 @@
                 <h3 class="text-uppercase">The Team</h3>
                 <p class="p-top-30 half-txt">
                     We the WattHub team will provide our consumers the best service
-                    they deserve. A great team is what makes it productive at work. 
+                    they deserve. A great team is what makes it productive at work.
                 </p>
-            </div>
-
-            <div class="col-md-4 col-sm-4">
-                <div class="team-container">
-                    <div class="container-img">
-                        <img src="css/image/unknown.jpg" alt="team member" class="img-responsive">
-                    </div>
-
-                    <div class="container-hover">
-                        <div class="desk">
-                            <p>"A business that makes nothing but money is a poor business"</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container-title">
-                    <h5>Richard Hendricks</h5>
-                    <span>Back-End Developer</span>
-                </div>
             </div>
 
             <div class="col-md-4 col-sm-4">
@@ -82,13 +89,52 @@
                     <span>Front-End Developer</span>
                 </div>
             </div>
+
+            <div class="col-md-4 col-sm-4">
+                <div class="team-container">
+                    <div class="container-img">
+                        <img src="css/image/unknown.jpg" alt="team member" class="img-responsive">
+                    </div>
+
+                    <div class="container-hover">
+                        <div class="desk">
+                            <p>"A business that makes nothing but money is a poor business"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-title">
+                    <h5>Richard Hendricks</h5>
+                    <span>Back-End Developer</span>
+                </div>
+            </div>
         </div>
     </div>
 
+
     <div class="basic-container">
+        <div class="col-sm-4 col-md-4">
+
+            <div class="text-container">
+                <div class="contact-text">
+                    <h1> Contact </h1>
+                    <p> No-11, 32<sup>th</sup> floor <p>
+                    <p> Millenia Tower, Marina Center, Singapore <p>
+
+                    <br/>
+
+                    <p class="text-bold">WattHub</p>
+                    <p> IoT Solutions and Development Team </p>
+                    <p> +65 1337 1337 </p>
+                </div>
+            </div>
+
+        </div>
+
+    <div class="col-sm-8">
         <div class="contact-container">
             <form id="contact-form" action="" method="post">
-                <h3>Contact Us</h3>
+                <h3>Message Us</h3>
                 <h4>Feel free to give us feedback</h4>
 
                 <fieldset>
@@ -118,5 +164,7 @@
             </form>
         </div>
     </div>
+
+    <div id="map-container"></div>
 </body>
 </html>
