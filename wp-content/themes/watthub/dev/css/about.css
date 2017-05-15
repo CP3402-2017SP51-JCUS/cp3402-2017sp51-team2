@@ -74,8 +74,8 @@ body {
     bottom: 0;
     right: 0;
     margin: 0;
-    border: 20px solid rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.90);
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    background-colo8 rgba(255, 255, 255, 0.90);
     opacity: 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -103,7 +103,8 @@ body {
 }
 .desk, .desk h4, .team-hover .s-link a {
     text-align: center;
-    color: #222;
+    color: #7e7e7e;
+    font-style: italic;
 }
 
 .container-title {
