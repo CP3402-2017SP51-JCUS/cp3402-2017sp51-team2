@@ -81,6 +81,15 @@
             pointer-events: none;
             opacity: 1;
         }
+        
+        @media only screen and (max-width: 768px) {
+            .header {
+                height: 150px;
+            }
+            .header .header-body h1, .header .header-body nav {
+                float: none;
+            }
+        }
     </style>
 </head>
 

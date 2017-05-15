@@ -64,6 +64,16 @@
             color: #ffffff;
             padding-right: 20px;
         }
+        
+        @media only screen and (max-width: 768px) {
+            .footer .footer-body {
+                text-align: center;
+            }
+            .footer .footer-body .footer-body-left,
+            .footer .footer-body .footer-body-right {
+                float: none;
+            }
+        }
     </style>
 
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
