@@ -23,6 +23,12 @@
     <?php wp_head(); ?>
 
     <style>
+        /* Fixing Space between header and content */
+        .entry-content {
+            margin-top: 0;
+                margin-bottom: 0;
+        }
+
         /* Header CSS */
         .header {
             background-color: #292c2f;
@@ -81,7 +87,7 @@
             pointer-events: none;
             opacity: 1;
         }
-        
+
         @media only screen and (max-width: 768px) {
             .header {
                 height: 150px;
