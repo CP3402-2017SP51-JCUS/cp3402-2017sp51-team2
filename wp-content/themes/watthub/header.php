@@ -23,11 +23,13 @@
     <?php wp_head(); ?>
 
     <style>
-        /* Fixing Space between header and content */
+        /* Fixing Space between header, footer and content */
         .entry-content {
             margin-top: 0;
-                margin-bottom: 0;
         }
+	.page { /* article tag */
+            margin-bottom: 0;
+	}
 
         /* Header CSS */
         .header {
