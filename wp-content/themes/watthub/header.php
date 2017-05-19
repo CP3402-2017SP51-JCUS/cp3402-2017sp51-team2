@@ -23,13 +23,13 @@
     <?php wp_head(); ?>
 
     <style>
-        /* Fixing Space between header, footer and content */
-        .entry-content {
-            margin-top: 0;
-        }
-	.page { /* article tag */
-            margin-bottom: 0;
+	/* Fixing Space between header, footer and content */
+	.entry-content {
+	    margin-top: 0;
 	}
+        .page { /* article tag */
+            margin-bottom: 0;
+        }
 
         /* Header CSS */
         .header {
@@ -92,7 +92,7 @@
 
         @media only screen and (max-width: 768px) {
             .header {
-                height: 150px;
+                height: 120px;
             }
             .header .header-body h1, .header .header-body nav {
                 float: none;
@@ -107,15 +107,15 @@
 
     <header class="header">
         <div class="header-body">
-            <h1><a href="#">Watt<span>Hub</span></a></h1>
+            <h1><a href="index.php">Watt<span>Hub</span></a></h1>
 
             <nav>
-                <a href="#"> Home </a>
-                <a href="#"> Blog </a>
-                <a href="#"> Order </a>
-                <a href="wp-content/themes/watthub/contact-us.php"> About Us </a>
+                <a href="index.php"> Home </a>
+                <a href="product"> Order </a>
+                <a href="about-us"> About Us </a>
             </nav>
         </div>
     </header>
 
 	<div id="content" class="site-content">
+
